@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header {
+    color: orange;
+    background: #222;
+    padding: 1.5em;
+    margin: 0;
+    align-self: center;
+    justify-content: space-around;
+    
+    font-size: 1.1em;
+
+}
+
+nav {
+    background: #222;
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 2em;
+    margin: 0;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+a:link {
+    text-decoration: none;
+    color: orange;
+}
+
+a:visited {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+
+.planets{
+    grid-area: image;
+    height:  52em;
+    width: 100%;
+}
+
+/* main {
+    background-color: #222;
+    color: white;
+    grid-area: main;
+    
+} */
+
+
+/* aside {
+    background-color: lightgreen;
+    grid-area: aside;
+} */
+
+footer {
+    background-color: #222;
+    color: orange;
+    grid-area: footer;
+    height: 2em;
+    margin: 0.1em;
+    padding-top: 0.5em;
+}
+
+body {
+    background: #222;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header nav"
+        "image image"
+        "footer footer "
+    ;
+}
