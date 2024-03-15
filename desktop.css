@@ -1,95 +1,7 @@
 /* GLOBAL CSS FOR EVERY DESKTOP PAGE */
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
 
-
-
-
-header {
-    color: orange;
-    background: #222;
-    padding: 1.5em;
-    margin: 0;
-    align-self: center;
-    justify-content: space-around;
-    
-    font-size: 1.1em;
-
-}
-
-nav {
-    background: #222;
-    grid-area: nav;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 2em;
-    margin: 0;
-    align-self: center;
-    font-weight: bold;
-    font-size: 1.1em;
-    
-}
-
-a:link {
-    text-decoration: none;
-    color: orange;
-}
-
-a:visited {
-    color: orange;
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
-
-
-
-main{
-    grid-area: main;
-    background-image: url(./images/planets.jpg);
-    background-size: cover;
-    background-position: center;
-    height:  52em;
-    width: 100%;
-}
-
-
-/* main {
-    background-color: #222;
-    color: white;
-    grid-area: main;
-    
-} */
-
-
-/* aside {
-    background-color: lightgreen;
-    grid-area: aside;
-} */
-
-footer {
-    background-color: #222;
-    color: orange;
-    grid-area: footer;
-    height: 2em;
-    margin: 0.1em;
-    padding-top: 0.5em;
-}
 
 body {
     background: #222;
@@ -101,6 +13,8 @@ body {
         "main main"
         "footer footer "
     ;
+
+    background-color: red;
 }
 /* GLOBAL CSS FOR EVERY DESKTOP PAGE END */
 
@@ -164,15 +78,11 @@ body {
 }
 
 .UON{
-    float: right;
-    border-radius: 5em;
-    
-    height: 80%;
-    width: 95%;
+    width: 100%;
+    height: 60%;
     grid-area: UON;
-    
+    border-radius: 5em;
 }
-
 
 
 .IndexItem-2{
@@ -239,7 +149,7 @@ body {
 
 
 
-.ProjectBox-1{
+.ProjectBox{
 
     
     
@@ -279,7 +189,7 @@ body {
 
 
 
-.ProjectTitle-1 {
+.ProjectTitle{
     
     color: orange;
     font-size: 30px;
@@ -290,7 +200,7 @@ body {
     
 }
 
-.ProjectDesc-1{
+.ProjectDesc{
     color: white;
     font-size: 16px; 
     text-align: center;
@@ -304,63 +214,12 @@ body {
 
     border-radius: 5em;
     
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     grid-area: Image;
 
     
 }
 
 
-
-.ProjectBox-2{
-    width: 40%    ;
-    height: 70%;
-
-    border-radius: 3em;
-    box-shadow: 1em 1em #141414;
-
-    background-color: #222;
-    opacity: 0.95;
-
-    padding: 2em;
-    align-self: center;
-    font-weight: 500;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-   
-    
-    display: grid;
-
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "Title Title Title Title"
-        "Image Image Description Description"
-        "Image Image Description Description"
-
-
-
-    
-}
-
-
-.ProjectTitle-2 {
-    
-    color: orange;
-    font-size: 30px;
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 10px;
-    grid-area: Title;
-
-}
-
-.ProjectDesc-2{
-    color: white;
-    font-size: 16px; 
-    text-align: center;
-    margin-top: 10px;
-    grid-area: Description;
-}
 

@@ -1,0 +1,265 @@
+body {
+    background: #222;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+
+    background-color: blue;
+}
+
+
+
+.showNav {
+    float: right;
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    z-index: 1;
+}
+
+.showNav::before {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid #fff;
+}
+
+nav {
+    display: none;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#clicked .on{
+    display: block;
+}
+
+#clicked:target nav{
+    display: block;
+}
+
+#clicked:target .on{
+    display: none;
+}
+
+
+
+/* INDEX MOBILE */
+
+.IndexContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.IndexItem-1{
+    width: 75%;
+    height: 15%;
+
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+    
+    background-color: #222;
+    opacity: 0.95;
+
+    padding: 2em;
+    align-self: center;
+
+    font-weight: 500;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "description"
+        "description2"
+        "description3"
+
+    ;
+
+    
+}
+
+.Hey {
+    font-size: 20px;
+    color: orange;
+    grid-area: description;
+}
+
+.Taylor {
+    font-size: 35px;
+    color: white;
+    grid-area: description2;
+}
+
+.Resume {
+    font-size: 15px;
+    color: orange;
+    grid-area: description3;
+}
+
+
+.UON{
+    display: none;
+    
+}
+
+.IndexItem-2{
+    width: 85%    ;
+    height: 60%;
+
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+
+    background-color: #222;
+    opacity: 0.95;
+    margin-top: 20px;
+    padding: 1em;
+    align-self: center;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.AboutMeTitle {
+    
+    color: orange;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.AboutMe{
+    color: white;
+    font-size: 16px; 
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+/* INDEX PAGE END */
+
+
+/* PROJECT PAGE START */
+
+
+
+
+
+.ProjectContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+
+
+
+
+
+
+.ProjectBox{
+
+    
+    
+
+   
+
+
+    width: 80%    ;
+    height: 35%;
+
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+    margin-top: 2em;
+    background-color: #222;
+    opacity: 0.95;
+
+    padding: 2em;
+    align-self: center;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+   
+    
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "Title"
+        "Description"
+
+
+}
+
+
+
+
+
+.ProjectTitle{
+    
+    color: orange;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 0.5em;
+    grid-area: Title;
+    
+}
+
+.ProjectDesc{
+    color: white;
+    font-size: 16px; 
+    text-align: center;
+    margin-top: 1em;
+    grid-area: Description;
+}
+
+
+
+.Placeholder{
+
+    display: none;
+    
+}
+
+
+
