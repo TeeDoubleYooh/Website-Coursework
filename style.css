@@ -57,8 +57,10 @@ a:active {
 
 
 
+main{
+    grid-area: main;
+}
 .planets{
-    grid-area: image;
     height:  52em;
     width: 100%;
 }
@@ -92,7 +94,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
         "header nav"
-        "image image"
+        "main main"
         "footer footer "
     ;
 }
