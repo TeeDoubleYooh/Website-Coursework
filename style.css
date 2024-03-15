@@ -1,3 +1,5 @@
+/* GLOBAL CSS FOR EVERY DESKTOP PAGE */
+
 * {
     margin: 0;
     padding: 0;
@@ -59,11 +61,13 @@ a:active {
 
 main{
     grid-area: main;
-}
-.planets{
+    background-image: url(./images/planets.jpg);
+    background-size: cover;
+    background-position: center;
     height:  52em;
     width: 100%;
 }
+
 
 /* main {
     background-color: #222;
@@ -98,7 +102,116 @@ body {
         "footer footer "
     ;
 }
+/* GLOBAL CSS FOR EVERY DESKTOP PAGE END */
+
+
+/* CONTENT FROM THE INDEX PAGE START*/
+.IndexContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.item-1{
+    width: 30%;
+    height: 30%;
+
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+    
+    background-color: #222;
+    opacity: 0.95;
+
+    padding: 2em;
+    align-self: center;
+
+    font-weight: 500;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: grid;
+
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "description UON"
+        "description2 UON"
+        "description3 UON"
+
+    ;
+
+    
+}
+
+.Hey {
+    font-size: 30px;
+    color: orange;
+    grid-area: description;
+}
+
+.Taylor {
+    font-size: 45px;
+    color: white;
+    grid-area: description2;
+}
+
+.Resume {
+    font-size: 15px;
+    color: orange;
+    grid-area: description3;
+}
+
+.UON{
+    float: right;
+    border-radius: 5em;
+    
+    height: 80%;
+    width: 95%;
+    grid-area: UON;
+    
+}
 
 
 
+.item-2{
+    width: 25%    ;
+    height: 60%;
 
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+
+    background-color: #222;
+    opacity: 0.95;
+
+    padding: 1em;
+    align-self: center;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.AboutMeTitle {
+    
+    color: orange;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.AboutMe{
+    color: white;
+    font-size: 16px; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* INDEX PAGE END */
