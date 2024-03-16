@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
 </head>
-<body>
+<body id="clicked">
     <header>
+        <a class="showNav on" href="#clicked"></a>
         <h1 class="">Taylor Co. Contact</h1>
     </header>
 
@@ -24,12 +25,37 @@
     </nav>
 
     <main>
-       <!--  <h2>     Hey! I am</h2>
-        <h3>   Taylor Williams</h3>
-        <h4>And this is my resume</h4> -->
+        <div class="ContactContainer">
+            <div class="ContactBox">
+                <div class="ContactUsTitle">Contact Us</div>
+                <form action="mailto:taylor.williams23@my.northampton.ac.uk" method="get">
 
-       
-        
+
+                    <!-- <label for="NameTextbox">Name:</label> -->
+                    <input type="text" name="NameTextbox" id="NameTextbox" placeholder="    Name.." required>
+
+
+
+                    <!-- <label for="EmailTextbox">Email:</label> -->
+                    <input type="text" name="EmailTextbox" id="EmailTextbox" placeholder="    Email.." required>
+                    
+                    
+                    
+                    <!-- <label for="textArea">Message:</label> -->
+                    <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder=" Message.." required></textarea>
+                    <input type="submit" value="submit">
+                
+                </form>
+
+
+            </div>
+           
+
+
+           
+
+        </div>
+
             
         
 
@@ -39,10 +65,7 @@
 
     
 
-  <!--   <aside>
-        <p>Sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo magnam, ea vitae consequatur provident non rem reiciendis consequuntur porro 
-            repudiandae assumenda repellendus libero autem iusto possimus! Fuga, repudiandae inventore.</p>
-    </aside> -->
+ 
 
     <footer>
         <p>&copy; Taylor Williams 2024</p>
