@@ -9,8 +9,20 @@ body {
         "footer"
     ;
 
-    background-color: blue;
+    background-color: #222;
 }
+
+
+nav ul ul{
+    display: none;
+}
+
+
+
+
+
+
+
 
 
 

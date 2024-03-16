@@ -1,6 +1,21 @@
 /* GLOBAL CSS FOR EVERY DESKTOP PAGE */
 
 
+body {
+    background: #222;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer "
+    ;
+
+    background-color: #222;
+}
+
+
 
 nav > ul > li{
     position: relative;
@@ -31,19 +46,7 @@ nav ul ul li:hover{
 
 
 
-body {
-    background: #222;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header nav"
-        "main main"
-        "footer footer "
-    ;
 
-    background-color: red;
-}
 /* GLOBAL CSS FOR EVERY DESKTOP PAGE END */
 
 
@@ -345,3 +348,78 @@ form textarea {
     grid-column: 2;
 }
  */
+
+
+/*  CONTACT PAGE END */
+
+/* SITE REPORT PAGE START */
+
+.ReportContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+
+
+
+
+
+
+
+.ReportBox{
+
+    
+    
+
+   
+
+
+    width: 90%    ;
+    height: 80%;
+
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+
+    background-color: #222;
+    opacity: 0.95;
+
+    padding: 2em;
+    align-self: center;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+   
+    
+
+
+}
+
+
+
+
+
+.ReportTitle{
+    
+    color: orange;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+
+    
+}
+
+.ReportDesc{
+    color: white;
+    font-size: 16px; 
+    
+    margin-top: 10px;
+   
+}
+
+.Part{
+    margin-bottom: 0.5em;
+}
