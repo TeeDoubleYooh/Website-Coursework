@@ -144,7 +144,7 @@ nav ul ul li:hover{
     font-size: 30px;
     text-decoration: underline;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 
 }
 
@@ -152,7 +152,7 @@ nav ul ul li:hover{
     color: white;
     font-size: 16px; 
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0.5em;
 
 }
 
@@ -226,7 +226,7 @@ nav ul ul li:hover{
     font-size: 30px;
     text-decoration: underline;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
     grid-area: Title;
     
 }
@@ -235,7 +235,7 @@ nav ul ul li:hover{
     color: white;
     font-size: 16px; 
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0.5em;
     grid-area: Description;
 }
 
@@ -314,7 +314,7 @@ nav ul ul li:hover{
     font-size: 30px;
     text-decoration: underline;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
     
     
 }
@@ -390,8 +390,14 @@ form textarea {
     align-self: center;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-   
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 7% 5% 88%;
+    grid-template-areas: 
+        "SiteReport Validation"
+        "Half1 Half2"
+        "Half1 Images"
+    ;
     
 
 
@@ -401,25 +407,136 @@ form textarea {
 
 
 
-.ReportTitle{
-    
+.ReportTitle1{
+    grid-area: SiteReport;
     color: orange;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: underline;
-    text-align: center;
-    margin-bottom: 10px;
+    
+    margin-bottom: 0.5em;
 
     
 }
 
 .ReportDesc{
     color: white;
-    font-size: 16px; 
+    font-size: 14px; 
     
-    margin-top: 10px;
+    margin-top: 0.5em;
    
 }
 
-.Part{
+.Half1{
+    grid-area: Half1;
     margin-bottom: 0.5em;
+}
+
+.Half2{
+    grid-area: Half2;
+    margin-bottom: 0.5em;
+    color: white;
+    font-size: 14px; 
+    
+    margin-top: 0.5em;
+}
+
+.ReportTitle2{
+    grid-area: Validation;
+    color: orange;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.validationImages{
+    grid-area: Images;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+    
+    
+}
+
+.validationImages img{
+    width: 26%;
+    height: 26%;
+    margin-top: 3em;
+}
+
+
+
+/* SITE REPORT PAGE END */
+
+
+
+/* VIDEO DEMONSTRATION START */
+
+.VideoContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+
+
+
+
+
+
+
+.VideoBox{
+
+    
+    
+
+   
+
+    display: flex;
+    flex-direction: column;
+    width: 60%    ;
+    height: 70%;
+
+    border-radius: 3em;
+    box-shadow: 1em 1em #141414;
+
+    background-color: #222;
+    opacity: 0.95;
+
+    padding: 2em;
+    align-self: center;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+   
+    
+   
+
+
+}
+
+
+
+
+
+.VideoTitle{
+    
+    color: orange;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 0.5em;
+    
+    
+}
+
+.embeddedVideo{
+    align-self: center;
+    margin-bottom: 4em;
+    width: 50%; 
+    height: 50%;
+    border-radius: 0.5em;
 }
